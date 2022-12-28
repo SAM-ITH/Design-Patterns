@@ -42,6 +42,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Login">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Llf-OZ-waW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -54,10 +57,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tdp-wO-aSS" secondAttribute="trailing" constant="20" id="wGq-E8-qXb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="8Co-pj-iV2" id="Fbj-GJ-2T3"/>
+                        <outlet property="passwordField" destination="Mce-es-lsu" id="8Ii-JK-pOD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="5" y="4"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="wKx-dn-dJJ">
@@ -81,6 +88,9 @@
                             <constraint firstItem="fD8-mC-zs6" firstAttribute="centerY" secondItem="ce7-3C-eQg" secondAttribute="centerY" id="vO8-U7-3OU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="WelComeLbl" destination="fD8-mC-zs6" id="7An-6t-Knh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HjW-U9-6Ea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var WelComeLbl: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
