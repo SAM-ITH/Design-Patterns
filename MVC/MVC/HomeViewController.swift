@@ -21,11 +21,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func loginBtnClicked(_ sender: UIButton){
-        loginBTN.isEnabled = emailField.text != "" && passwordField.text != ""
+        
     }
     
     @objc private func validateFields() {
-        
+        loginBTN.isEnabled = emailField.text != "" && passwordField.text != ""
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
