@@ -21,7 +21,18 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func loginBtnClicked(_ sender: UIButton){
-        
+        NetworkService.shared.login(email: emailField.text!, password: passwordField.text!) { sucess in
+            if sucess {
+                self.goToHomePage()
+            }else{
+                print("invalid credentials")
+            }
+        }
+    }
+    
+    private func goToHomePage(){
+        let controller = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        present(controller, animated: true, completion: nil)
     }
     
     @objc private func validateFields() {
