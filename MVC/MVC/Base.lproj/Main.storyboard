@@ -70,7 +70,7 @@
         <!--Login View Controller-->
         <scene sceneID="wKx-dn-dJJ">
             <objects>
-                <viewController id="MGY-EU-hYZ" customClass="LoginViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="MGY-EU-hYZ" customClass="LoginViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ce7-3C-eQg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
