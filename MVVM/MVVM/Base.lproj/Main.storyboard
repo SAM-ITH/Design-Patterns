@@ -43,6 +43,9 @@
                                             <fontDescription key="titleFontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="18"/>
                                             <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDT-XT-rYA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

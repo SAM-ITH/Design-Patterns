@@ -18,6 +18,12 @@ class LoginViewController: UIViewController {
         
     }
 
-
+    @IBAction func loginBtnClicked(_ sender: Any) {
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
 
