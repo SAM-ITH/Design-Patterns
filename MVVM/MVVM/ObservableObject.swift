@@ -9,8 +9,12 @@ import Foundation
 
 class observableObject<T>
 {
-    
-    var value: T?
+    // listner object
+    var value: T? {
+        didSet{
+            listener?(value)
+        }
+    }
     
     private var listener: ((T?) -> Void)? // in here this use an a single object but we can adjust it to used as array that multiple objects can subcribe. 
     
