@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     
     private let viewModel = HomeViewModel()
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
         super.viewDidLoad()
         
         viewModel.getLoggedInUser()
