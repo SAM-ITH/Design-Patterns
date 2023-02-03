@@ -26,6 +26,6 @@ final class NetworkService {
                 self?.user = nil
                 completion(false)
             }
-        } 
+        }
     }
 }
