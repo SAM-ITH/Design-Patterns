@@ -41,6 +41,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <connections>
+                                            <action selector="LoginBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uks-hl-K3U"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -53,6 +56,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eol-Do-g19" secondAttribute="trailing" constant="20" id="UNV-RC-yCs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="oP8-ED-ZNR" id="tj1-ep-KJZ"/>
+                        <outlet property="passwordField" destination="5BG-19-xwl" id="iNG-qD-ggd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,6 +87,9 @@
                             <constraint firstItem="ebt-zY-t2B" firstAttribute="centerX" secondItem="qMg-BS-QYx" secondAttribute="centerX" id="hvq-4L-bEb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="wellcomeLabel" destination="ebt-zY-t2B" id="Qoe-gN-osx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sc4-9G-n4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
